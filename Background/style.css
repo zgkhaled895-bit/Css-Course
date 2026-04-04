@@ -1,0 +1,10 @@
+body {
+    /* background: conic-gradient(from 0deg, red , yellow , blue , lime  , orange ); */
+    background-color: gray;
+}
+p {
+    font-size: 20px;
+}
+img {
+    margin: 0 0 0 510px;
+}

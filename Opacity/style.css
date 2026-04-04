@@ -1,0 +1,13 @@
+body {
+    background-color: gray;
+}
+.para {
+    margin-left: 15px;
+    line-height: 90px;
+}
+p , .para {
+    font-size: 20px;
+}
+p {
+    line-height: 35px;
+}
