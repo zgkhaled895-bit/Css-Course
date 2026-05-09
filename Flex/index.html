@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>• Flexbox :</h1>
+            <p>- A modern CSS layout module designed for building flexible and responsive interfaces.</p>
+        </header>
+
+        <section>
+            <h2>1. The Flex Container (The Parent) :</h2>
+            <div>
+                <p>- The first step in using Flexbox is defining a <strong>Flex Container</strong>, By applying
+                    <code>display: flex;</code> to an element, you instantly transform all children into "flexible
+                    items".
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h3>The most important characteristics of the container:</h3>
+            <p><code>flex-direction :</code> This property defines the <strong>Main Axis</strong> of the container, take
+                values :</p>
+            <ul>
+                <li><strong>Row (Default):</strong> Items align horizontally (Left to Right).</li>
+                <li><strong>Column:</strong> Items align vertically (Top to Bottom).</li>
+            </ul>
+            <p><code>justify-content :</code>Controls in distribution of the elements on the <strong>Main axis</strong>
+                , take values :</p>
+            <ul>
+                <li><strong>Center : </strong>elements in the center.</li>
+                <li><strong>Space-between :</strong>equal spaces between elements.</li>
+                <li><strong>Space-around :</strong> spaces around and between items but not equal spaces.</li>
+                <li><strong>Space-evenly :</strong> equal spaces between and around items.</li>
+                <li><strong>Left .</strong></li>
+                <li><strong>Rigth .</strong></li>
+                <li><strong>flex-start (Default).</strong></li>
+                <li><strong>flex-end .</strong></li>
+            </ul>
+            <p><code>align-items :</code>Controls in distribution of the elements on the <strong>Cross axis</strong>,
+                take values :</p>
+            <ul>
+                <li><strong>center :</strong>elements in the center.</li>
+
+                <li><strong>flex-start :</strong>This property takes care of edges , and different from basline , It
+                    takes all the elements and pastes their top edges to the beginning of the container (in the case of
+                    a row), For example, if you have a large box and a small box, the "vertexes" of the boxes will be
+                    equal at the top</li>
+                <li><strong>flex-end .</strong></li>
+                <li><strong>stretch (Default):</strong>The elements expand to completely fill the container , If the
+                    length and width are not specified .</li>
+                <li><strong>basline :</strong>This property takes care of content ,and it is different from flex-start.
+                    It aligns elements based on content (Text).</li>
+            </ul>
+            <p><code>flex-wrap :</code></p>
+            <ul>
+                <li><strong>wrap :</strong> allows flex items to wrap onto multiple lines if they can't fit in a single
+                    line.</li>
+                <li><strong>nowrap :</strong> prevents flex items from wrapping onto multiple lines, all items will be
+                    displayed in a single line.</li>
+                <li><strong>wrap-reverse :</strong> allows flex items to wrap onto multiple lines , but in the opposite
+                    direction.</li>
+            </ul>
+            <p><code>flex-flow :</code> The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them .</p>
+        </section>
+        <section>
+            <h2>2. Flex Items :</h2>
+            <p>- After configure the container, you can control each individual element within it.</p>
+        </section>
+        <section>
+            <h3>The most important characteristics of the items :</h3>
+            <p><code>order :</code>It determines the order of the element inside flex container , Zero is the default
+                value , It takes positive and negative values.</p>
+            <p><code>flex-grow :</code> Specifies how much the item expands to take up additional space, Zero is the
+                default value :</p>
+            <ul>
+                <li>1 → take up additional space .</li>
+                <li>if you hane two elements the first element has <code>flex-grow: 1</code> and the second has
+                    <code>flex-grow: 2</code> , the second element take Double the space .
+                </li>
+            </ul>
+            <p><code>flex-shrink :</code> Determines how much the item shrinks if there is not enough space , defult
+                value is one .</p>
+            <p><code>flex-basis :</code> Specifies the basic size of the element before expansion or contraction , It
+                could be px,%,auto :</p>
+            <ul>
+                <li>in case : <code>flex-direction : row</code> → flex-basis = width</li>
+                <li>in case : <code>flex-direction : column</code> → flex-basis = height</li>
+            </ul>
+            <p><Code>align-self :</Code> Controls in one element only and exceed align-items located on the container, take values : auto , flex-start , flex-end , center , stretch , basline .</p>
+            <p><strong>Flex Shorthand :</strong><br> <Code>flex : flex-grow flex-shrink flex-basis</Code> , Ex: <code>flex : 1 1 200px;</code></p>
+
+        </section>
+
+    </article>
+    <div class="test">
+        <div class="div1">hi</div>
+        <div class="div2">hello world</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+
+</html>
