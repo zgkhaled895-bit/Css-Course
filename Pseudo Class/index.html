@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes Guide</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header>
+            <h1>Pseudo-Classes</h1>
+            <p class="lead">Control elements based on their state and position</p>
+        </header>
+
+        <section class="card">
+            <h2>What is a Pseudo-Class?</h2>
+            <p>A pseudo-class is a keyword added to element selectors that is used to specify a <strong>particular
+                    state</strong> of the element (e.g., when a user hovers over it, or when an input is focused).</p>
+        </section>
+
+        <section class="card">
+            <h2>Syntax</h2>
+            <p>The syntax is straightforward: use a colon (<code>:</code>) after the selector, followed by the
+                pseudo-class name.</p>
+            <pre><code>selector:pseudo-class {
+                 property: value;
+            }</code></pre>
+        </section>
+
+        <section class="card">
+            <h2>Types of Pseudo-Classes</h2>
+
+            <div class="sub-group">
+                <h3>1. User Interaction Instances</h3>
+                <ol class="styled-list">
+                    <li><code>:hover</code> : Applied when the user hovers the mouse over the element.</li>
+                    <li><code>:active</code> : Applied while the user clicks on the element.</li>
+                    <li><code>:focus</code> : Applied when the element receives focus, such as clicking into an input
+                        box.</li>
+                </ol>
+            </div>
+
+            <div class="sub-group">
+                <h3>2. Link Statuses</h3>
+                <ol class="styled-list">
+                    <li><code>:link</code> : To format links that the user has not yet visited.</li>
+                    <li><code>:visited</code> : To format links that the user has previously visited.</li>
+                </ol>
+            </div>
+
+            <div class="sub-group">
+                <h3>3. Arrangement and Structure</h3>
+                <ol class="styled-list">
+                    <li><code>:first-child</code> : Selects the first child element.</li>
+                    <li><code>:last-child</code> : Selects the last child element.</li>
+                    <li><code>:nth-child(n)</code> : Selects elements based on a specific formula or number (e.g.,
+                        <code>:nth-child(2)</code> selects the second child).</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

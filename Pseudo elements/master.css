@@ -1,0 +1,71 @@
+* {
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding : 20px 40px;
+    line-height: 35px ;
+    background-color: #f8fafc;
+}
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+header h1 {
+    font-size : 50px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color : #1e293b;
+    margin : 25px 0 40px 0
+}
+.card-one {
+    background-color: #b5d4f0;
+    padding : 15px ;
+    margin: 0 40px 25px 40px;
+    border-left : 2.5px solid gray;
+    border-radius: 5px;
+    
+}
+.card-one h2 {
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 8px;
+}
+.card-two {
+    background-color: #b5d4f0;
+    margin : 0 40px ;
+    padding : 15px ;
+    border-left : 2.5px solid gray;
+    border-radius: 5px;
+}
+.card-two h2 {
+    border-bottom: 0.5px solid gray;
+}
+pre {
+    background-color: #1e293b;
+    color: #f8fafc;
+    border-radius: 8px;
+    padding : 10px
+}
+pre code {
+    color : #38bdf8 ;
+    font-size: 15px;
+   
+}
+.card-three {
+    background-color: #b5d4f0;
+    margin : 25px 40px 0 40px;
+    padding : 10px 20px 5px 25px ;
+    border-left : 3px solid  gray;
+    border-radius: 5px;
+}
+.style-list {
+    padding-left : 10px
+}
+.card-three h2 {
+    border-bottom: 0.5px solid gray;
+    padding-bottom: 8px;
+   
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Pseudo-Elements</h1>
+        </header>
+        <section class="card-one">
+            <h2>What is a Pseduo elements ?</h2>
+            <p>Pseudo-elements are used to target a specific part of an element's content and format it, or to
+                create a new dummy element and add it before or after the main element's content without having to
+                write it in HTML.</p>
+        </section>
+        <section class="card-two">
+            <h2>Syntax :</h2>
+            <p>use a double colon (<code>::</code>) after the selector, followed by the
+                pseudo-class name.</p>
+            <pre><code>selector::pseudo-element {
+                 property : value ;
+            }</code></pre>
+        </section>
+        <section class="card-three">
+            <h2>Types of pseudo-element :</h2>
+            <div class="sub-group">
+                <h3>1.Content generation elements :</h3>
+                <p>- It is used to create completely new virtual elements on the page without
+                    writing them in HTML , examples :</p>
+                <ol class="style-list">
+                    <li>::before : Creates a dummy element and places it just before the content of the original element
+                        , "content:" property must be used always with her .
+                    </li>
+                    <li>::after : ::before : Creates a dummy element and places it just after the content of the
+                        original element
+                        , "content:" property must be used always with her .</li>
+                </ol>
+            </div>
+            <div class="sub-group">
+                <h3>2.Text formatting and typography elements :</h3>
+                <p>- These elements are used to target very specific parts of text within paragraphs, and are very useful
+                    for professional magazine and blog designs , examples :</p>
+                <ol class="style-list">
+                    <li>::first-letter : targets only the first character of the text displayed within the element .
+                    </li>
+                    <li>::first-line : targets only the first line of text .</li>
+                </ol>
+            </div>
+            <div class="sub-group">
+                <h3>3.User interface and interaction elements :</h3>
+                <p>- These elements control parts that appear only when the user interacts with the page or input fields , examples :
+                </p>
+                <ol class="style-list">
+                    <li>::placeholder : Used to format placeholder text inside input fields .</li>
+                    <li>::selection : Targets the part of the text that the user selects and highlights with the
+                        mouse .</li>
+                </ol>
+            </div>
+            <div class="sub-group">
+                <h3>4.List and table elements :</h3>
+                <p>- For example :</p>
+                <ol class="style-list">
+                    <li>::marker : Targets the list tag (automatic dots for &lt;ul&gt; or numbers for &lt;ol&gt;).</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
